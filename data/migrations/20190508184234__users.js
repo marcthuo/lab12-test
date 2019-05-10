@@ -5,13 +5,13 @@ exports.up = function(knex, Promise) {
 
       tbl.string('name', 128).notNullable();
 
-      tbl.string('username', 255).notNullable().unique();
+      tbl.string('username', 255).notNullable()
 
       tbl.string('password', 255).notNullable();
 
       tbl.string('usertype').notNullable();
 
-      tbl.string('email').notNullable().unique();
+      tbl.string('email').notNullable()
   })
 };
 
