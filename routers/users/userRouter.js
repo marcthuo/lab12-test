@@ -12,6 +12,16 @@ router.get('/', (req, res) => {
         res.status(500).json(err));
 });
 
+// router.get('/mock', (req, res) => {
+//   Users.push()
+//   .then(user => {
+//     res.json(user);
+//   })
+//   .catch(err => 
+//     res.status(500).json(err));
+// })
+
+
 router.get('/:id', (req, res) => {
     Users.findById(req.params.id)
     .then(user => {
